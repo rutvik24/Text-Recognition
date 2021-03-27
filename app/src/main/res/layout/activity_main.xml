@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:text="Result"
+                        android:id="@+id/Result"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="25sp" />
+                    <TextView
+                        android:id="@+id/resultEt"
+                        android:layout_below="@id/Result"
+                        android:textColor="#000"
+                        android:text="Result"
+                        android:visibility="gone"
+                        android:textSize="20sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/text_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/resultEt"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center_horizontal"
+                        android:text="Image Preview"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/text_image"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/imageIv"/>
+
+    <Button
+        android:id="@+id/click"
+        android:text="Set Into Box"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageIv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<TableLayout
+    android:id="@+id/tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?dividerHorizontal"
+    android:showDividers="middle"
+    android:stretchColumns="1"
+
+    android:layout_below="@+id/click">
+    <TableRow android:background="#0079D6" android:padding="5dp">
+        <TextView
+            android:id="@+id/blood"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:id="@+id/haemoglobin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/fifteen_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Null"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:id="@+id/Total_rbc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/million_cmm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Null"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/mill_rbc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:id="@+id/Total_wbc" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:text="Null"
+            android:layout_weight="1"
+            android:id="@+id/cmm"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/fourthousand"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow android:background="#0079D6" android:padding="5dp">
+        <TextView
+            android:id="@+id/leucocyte"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Poly"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/fifty_three"
+            android:text="Null"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/fifty_four_pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lymphocytes"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Null"
+            android:id="@+id/thirty_five_pr"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/sev_thir"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Eosinophils"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/zero_four"
+            android:text="Null"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/zero_one"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/monocytes"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/zero_8"
+            android:text="Null"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/zero_2"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/basophils"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/zero"
+            android:text="Null"
+
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/zero_1"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#0079D6" android:padding="5dp">
+        <TextView
+            android:id="@+id/Bloodindices"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/pcv"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Null"
+
+            android:id="@+id/fourty_7"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/MF"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/mcv"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/eight_2"
+            android:text="Null"
+
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/eighty"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/mch"
+
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/twenty_7"
+            android:text="Null"
+
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/twenty_7_pg"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/mchc"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/thirty_3"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/thirty_2"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rdw"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/thirteen"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ele"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow >
+        <TextView
+            android:id="@+id/total_count"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:background="#0079D6"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/cmm3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:background="#DAE8FC"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DAE8FC"
+            android:id="@+id/cmm15"
+            android:padding="5dp"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+    </TableRow>
+    <TableRow >
+        <TextView
+            android:id="@+id/diff"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:background="#0079D6"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="#0079D6"
+            android:id="@+id/l_count"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:padding="5dp"-->
+<!--            android:id="@+id/abs"-->
+<!--            android:background="#0079D6"-->
+<!--            android:fontFamily="@font/allerta"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_weight="1" />-->
+    </TableRow>
+<!--    <TableRow android:background="#0079D6" android:padding="5dp" android:visibility="gone">-->
+<!--        <TextView-->
+<!--            android:id="@+id/diff"-->
+<!--            android:fontFamily="@font/allerta"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="3" />-->
+<!--    </TableRow>-->
+    <TableRow android:background="#DAE8FC" android:padding="5dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/abs_eo"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/two_two_0"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/four_50"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/abs_ly"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/two18"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/four80"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/absmo"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/five20"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/eight00"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/absne"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/three29"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/one80"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/imm"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ten"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ten5"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            />
+    </TableRow>
+</TableLayout>
+</RelativeLayout>
+</ScrollView>
